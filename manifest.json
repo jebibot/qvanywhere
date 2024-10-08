@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "퀵이봤 - 아프리카TV 임베드 도우미",
+  "name": "퀵이봤 - SOOP 임베드 도우미",
   "short_name": "퀵이봤",
-  "version": "1.0.0",
-  "description": "퀵뷰 등 아프리카TV 로그인을 임베드된 플레이어에서 사용할 수 있도록 합니다.",
+  "version": "1.0.1",
+  "description": "퀵뷰 등 SOOP 로그인을 임베드된 플레이어에서 사용할 수 있도록 합니다.",
   "minimum_chrome_version": "119",
   "browser_specific_settings": {
     "gecko": {
