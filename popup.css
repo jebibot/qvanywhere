@@ -12,51 +12,36 @@ body {
     sans-serif;
 }
 
-#streams {
+#sites {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
-  margin-bottom: 0.5rem;
 }
 
-#streams div {
+#sites div,
+#sites form {
   display: flex;
 }
 
-#streams span {
+#sites span,
+#sites input {
   flex-grow: 1;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-#streams button {
+#sites input {
+  margin-right: 0.25rem;
+}
+
+#sites button {
   border-width: 0;
   border-radius: 0.25rem;
   background-color: transparent;
   cursor: pointer;
 }
 
-#streams button:hover {
+#sites button:hover {
   background-color: #d6d6d6;
-}
-
-#watch {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 2rem;
-  padding: 0.5rem 1rem;
-  border-width: 0;
-  border-radius: 0.25rem;
-  font-weight: bold;
-  color: #fafafa;
-  background-color: #18181b;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-#watch:hover {
-  background-color: #18181be6;
 }
