@@ -21,7 +21,6 @@
     "storage"
   ],
   "host_permissions": [
-    "*://*.afreecatv.com/*",
     "*://*.sooplive.co.kr/*"
   ],
   "action": {
