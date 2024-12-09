@@ -15,7 +15,6 @@
     "48": "icon48.png",
     "128": "icon128.png"
   },
-  "homepage_url": "https://mul.live/",
   "permissions": [
     "cookies",
     "storage"
