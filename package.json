@@ -4,14 +4,13 @@
   "description": "퀵뷰 등 SOOP 로그인을 임베드된 플레이어에서 사용할 수 있도록 합니다.",
   "private": true,
   "scripts": {
-    "build": "zip -r extension.zip *.html *.js *.css *.png manifest.json",
-    "build:firefox": "mkdir -p dist && cp -r *.html *.js *.css *.png manifest.json dist",
+    "build": "rm -rf dist && mkdir -p dist && cp -r *.html *.js *.css *.png manifest.json dist",
     "postversion": "manifest=\"$(jq \".version = `jq '.version' package.json`\" manifest.json)\" && echo \"$manifest\" > manifest.json",
-    "publish": "chrome-webstore-upload upload --source=extension.zip --auto-publish",
+    "publish:chrome": "google-chrome --headless --no-sandbox --disable-crash-reporter --no-crashpad --pack-extension=./dist --pack-extension-key=key.pem && node lib/upload.mjs",
     "publish:firefox": "cd dist && web-ext sign --channel listed --approval-timeout 60000"
   },
   "devDependencies": {
-    "chrome-webstore-upload-cli": "^3.3.1",
-    "web-ext": "^8.3.0"
+    "chrome-webstore-upload": "^3.2.0",
+    "web-ext": "^8.9.0"
   }
 }
