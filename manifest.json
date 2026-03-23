@@ -21,7 +21,7 @@
     "storage"
   ],
   "host_permissions": [
-    "*://*.sooplive.co.kr/*"
+    "*://*.sooplive.com/*"
   ],
   "action": {
     "default_popup": "popup.html"

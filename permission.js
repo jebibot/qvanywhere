@@ -1,7 +1,7 @@
 document.getElementById("grant").addEventListener("click", () => {
   chrome.permissions
     .request({
-      origins: ["*://*.sooplive.co.kr/*"],
+      origins: ["*://*.sooplive.com/*"],
     })
     .then((granted) => {
       if (granted) {
